@@ -1,0 +1,85 @@
+//main: ../style.less
+
+.unleash {
+background-image: linear-gradient(to right, #c4f5c9 , #30a8ff);
+height: 995px;
+
+@media @tablet{
+    height: 800px;
+}
+
+@media @mobile-sm{
+    height: 450px;
+}
+}
+
+
+
+
+.unleash__conteiner{
+    display: flex;
+    justify-content: space-between;
+}
+
+.unleash__title{
+    font-weight: 700;
+    font-size: 40px;
+    line-height:  60px;
+    color: #1B2534;
+    margin:138px 42px;
+
+    @media @tablet{
+        font-size: 25px;
+        line-height: 30px;
+    }
+
+    @media @mobile-sm{
+    margin:5px 0;
+
+    }
+}
+
+.important__watch__btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 70px;
+    .btn{
+            border-radius: 20px;
+            cursor: pointer;
+            font-family: inherit;
+            letter-spacing: 0.4px;
+            font-size: 20px;
+            color: #1b2534;
+            line-height: 20px;
+            font-weight: 700;
+            padding: 22px 21px 30px 32px;
+            border: none;
+            &:hover{
+              background-color: @gray;
+            }
+    }
+    
+}
+
+.unleash__img{
+    padding: 0;
+    margin: 0;
+    img{
+        width: 1200px;
+        height: 599px;
+        margin-left: 70px;
+
+        @media @notebook{
+            width: 860px;
+        }
+        @media @tablet{
+            width: 500px;
+            height: 400px;
+        }
+        @media @mobile-sm{
+            width: 400px;
+            height: 300px;
+        }
+    }
+}

@@ -1,0 +1,159 @@
+//main: ../style.less
+
+.loved {
+  height: 1500px;
+  background-color: #e5e5e5;
+
+  @media @tablet {
+    height: 1100px;
+  }
+
+  @media @mobile-sm{
+    height: 800px;
+  }
+}
+
+.loved__title {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 42px;
+  text-align: center;
+  padding: 159px 300px 110px 301px;
+  color: #1b2534;
+
+  @media @tablet {
+    padding: 159px 220px 63px 130px;
+  }
+
+  @media @mobile-sm {
+    padding: 0;
+  }
+}
+
+.loved__logo {
+  margin-left: 100px;
+  padding-bottom: 185px;
+
+  img {
+    margin-left: 130px;
+
+    width: 80px;
+    height: 50px;
+
+    @media @notebook {
+      margin-left: 50px;
+    }
+    @media @tablet {
+      margin-left: 11px;
+      width: 73px;
+      height: 53px;
+    }
+
+    @media @mobile-sm {
+      margin-left: 11px;
+      width: 53px;
+      height: 33px;
+      margin-top: 20px;
+    }
+  }
+
+  @media @tablet {
+    padding-bottom: 85px;
+  }
+
+  @media @mobile-sm {
+    padding-bottom: 20px;
+  }
+
+  a:first-child {
+    img {
+      margin-left: 0;
+    }
+  }
+}
+
+.loved__img {
+  margin-left: 30px;
+}
+
+.loved__pictures {
+  display: flex;
+}
+
+.loved__pictures {
+  img {
+    width: 400px;
+    height: 339px;
+    border-radius: 30px;
+
+    @media @notebook {
+      display: none;
+    }
+  }
+}
+
+.loved__img-title {
+  margin: 27px 0;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 42px;
+  color: #1b2534;
+
+  @media @tablet {
+    font-size: 15px;
+    line-height: 22px;
+  }
+}
+
+.loved__img-section {
+  margin-bottom: 38px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  color: #606060;
+}
+
+.loved__img-user {
+  display: flex;
+
+  img {
+    width: 66px;
+    height: 66px;
+    border-radius: 100px;
+  }
+}
+
+.loved__user-name {
+  margin-left: 20px;
+  h5 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    color: #1b2534;
+    margin: 0;
+  }
+
+  p {
+    margin: 0;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 28.8px;
+    color: #606060;
+  }
+
+  span {
+    font-size: 35px;
+    color: #29a0f5;
+  }
+}
+
+.important__watch--btn {
+  display: flex;
+  justify-content: center;
+  padding: 85px 311px 170px 302px;
+  .btn {
+    &:hover {
+      background-color: #29a0f5;
+    }
+  }
+}

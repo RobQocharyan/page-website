@@ -1,0 +1,51 @@
+//main: ../style.less
+
+.section{
+    background-color: #E5E5E5;
+}
+
+
+
+.section__div{
+    // margin: 80px 50px 160px 50px;
+    display: flex;
+    justify-content: center;
+
+    @media @mobile-sm{
+        display: block;
+    }
+}
+
+
+.section__img{
+    width: 1200px;
+    height: 1000px;
+
+    position: absolute;
+    top: 668px;
+    z-index: 1;
+   
+    @media @notebook{
+        width: 968px;
+        height: 1000px;
+    
+        position: absolute;
+        top: 668px;
+        z-index: 1;
+    }
+
+    @media @tablet{
+        width: 468px;
+        height: 300px;
+    }
+
+    @media @mobile-sm{
+        width: 200px;
+        height: 200px;
+        
+        position: absolute;
+        top: 400px;
+        left: 0;
+        z-index: 1;
+    }
+}

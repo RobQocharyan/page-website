@@ -1,0 +1,89 @@
+//main: ../style.less
+
+.btn__div {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 599px;
+  @media @mobile-sm{
+    display: block;
+    width: 100px;
+  }
+}
+
+.btn {
+  border-radius: 20px;
+  cursor: pointer;
+  font-family: inherit;
+  letter-spacing: 0.4px;
+  font-size: 20px;
+  color: #1b2534;
+  line-height: 20px;
+  font-weight: 700;
+  padding: 22px 21px 30px 32px;
+  border: none;
+  &:hover{
+    background-color: @gray;
+  }
+  @media @tablet{
+    font-size: 15px;
+  }
+
+  @media @notebook{
+  padding: 10px 21px 10px 10px;
+  font-size: 15px;
+
+  }
+
+  @media @mobile-sm{
+  display: none;
+  }
+}
+
+
+
+.togle__btn{
+  width: 35px;
+  position: absolute;
+  right: 80px;
+  top: 40px; 
+  display: none;
+  span{
+    display: inline-block;
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+    float: left;
+    margin-bottom: 8px;
+  }
+  
+
+
+}
+
+
+@media @notebook{
+  .togle__btn{
+    display: block;
+
+  }
+  .nav{
+      display: none;
+
+    }
+}
+
+@media @tablet{
+  .togle__btn{
+   margin-right: 300px;
+   margin-top: 15px;
+
+  }
+
+  @media @mobile-sm{
+    .togle__btn{
+      margin-right: 10px;
+      margin-top: 15px;
+   
+     }
+  }
+}
